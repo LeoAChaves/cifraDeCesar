@@ -1,37 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
-    background-color: blueviolet;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-image: url("./imagens/criptografia.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+fieldset {
+  border: none;
+}
+h2,
+label,
+legend,
+.metodo,
+output {
+  color: white;
+  font-weight: 700;
+}
+textarea {
+  resize: none;
+  border-radius: 15px;
+  padding: 10px;
+}
+.metodo,
+.tipo,
+.resposta,
+.passo {
+  background-color: rgba(0, 0, 255, 0.7);
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
 .decoder {
-    background-color: aqua;
-    width: 500px;
-    height: 500px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+  background-color: rgba(128, 128, 128, 0.9);
+  width: 500px;
+  height: 500px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.chave {
-    text-align: center;
-    width: 200px;
-    height: 30px;
-    background-color: cadetblue;
+.passo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  width: 50%;
 }
+.tipo {
+  display: flex;
+  flex-direction: column;
+}
+
 .resposta {
-    background-color: royalblue;
-    width: 80%;
-    height: 100px;
+  width: 80%;
+  height: 100px;
 }
 .enviar {
-    width: 100px;
-    height: 40px;
+  width: 100px;
+  height: 40px;
 }

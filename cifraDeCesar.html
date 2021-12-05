@@ -1,46 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cifra de Cesar</title>
-    <link rel="stylesheet" href="./cifraDeCesar.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./cifraDeCesar.css" />
+  </head>
+  <body>
     <form class="decoder">
-        <h2>Criptografia</h2>
+      <h2>Criptógrafo</h2>
 
-        <label for="entrada">Mensagem</label>
-        <textarea name="mensagem" id="entrada" cols="40" rows="5" placeholder=" Escreva aqui a sua mensagem..."></textarea>
+      <textarea
+        name="mensagem"
+        id="entrada"
+        cols="55"
+        rows="7"
+        required
+        placeholder=" Escreva aqui a sua mensagem..."
+      ></textarea>
 
-        <fieldset class="metodo">
-            <legend>Método da criptografia</legend>
-            <select>
-                <option>Cifra de Cesar</option>
-                <option>Base 64</option>
-            </select>
-        </fieldset>
+      <fieldset>
+        <legend>Método da criptografia</legend>
+        <select class="metodo">
+          <option>Escolha o método</option>
+          <option>Cifra de Cesar</option>
+          <option>Base 64</option>
+        </select>
+      </fieldset>
 
-        <div class="chave">Chave</div>
+      <div class="passo">
+        <input
+          type="range"
+          value="50"
+          min="1"
+          max="99"
+          oninput="this.nextElementSibling.value = this.value"
+        />
+        <output>50</output>
+      </div>
 
-        <fieldset class="tipo">
+      <fieldset class="tipo">
+        <div class="cod-decod">
+          <input
+            type="radio"
+            name="cod-decod"
+            value="msg-codigo"
+            id="codificar"
+          />
+          <label for="codificar">Codificar</label>
+        </div>
+        <div class="cod-decod">
+          <input
+            type="radio"
+            name="cod-decod"
+            value="codigo-msg"
+            id="decodificar"
+          />
+          <label for="decodificar">Decodificar</label>
+        </div>
+      </fieldset>
 
-            <label for="codificar">Codificar</label>
-            <input type="radio" name="cod-decod" value="msg-codigo" id="codificar">
+      <div class="resposta"></div>
 
-            <label for="decodificar">Decodificar</label>
-            <input type="radio" name="cod-decod" value="codigo-msg" id="decodificar">
-
-        </fieldset>
-
-        <div class="resposta"></div>
-
-        <button class="enviar">------- Mensagem!</button>
-        
+      <button class="enviar">------- Mensagem!</button>
     </form>
 
     <script src="./cifraDeCesar.js"></script>
-</body>
+  </body>
 </html>
