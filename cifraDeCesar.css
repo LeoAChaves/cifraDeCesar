@@ -17,32 +17,23 @@ body {
 fieldset {
   border: none;
 }
-h2,
-label,
-legend,
-.metodo,
-output {
-  color: white;
-  font-weight: 700;
-}
 textarea {
   resize: none;
   border-radius: 15px;
   padding: 10px;
 }
-.metodo,
-.tipo,
-.resposta,
-.passo {
-  background-color: rgba(0, 0, 255, 0.7);
-  padding: 10px 15px;
-  border-radius: 15px;
+legend {
+  text-align: center;
 }
 
+.metodo {
+  font-size: 16px;
+  margin-top: 6px;
+}
 .decoder {
   background-color: rgba(128, 128, 128, 0.9);
   width: 500px;
-  height: 500px;
+  height: 550px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -61,12 +52,32 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-
 .resposta {
   width: 80%;
   height: 100px;
 }
 .enviar {
-  width: 100px;
-  height: 40px;
+  width: 124px;
+  height: 56px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.metodo,
+.tipo,
+.resposta,
+.passo {
+  background-color: rgba(0, 0, 255, 0.7);
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+h2,
+label,
+legend,
+.metodo,
+output {
+  color: white;
 }

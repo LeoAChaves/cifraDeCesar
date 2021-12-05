@@ -12,3 +12,21 @@ metodo.addEventListener("change", function () {
     passo.style.display = "none";
   }
 });
+
+var enviar = document.querySelector(".enviar");
+var tipoRadio = document.forms[0].coddecod;
+var tipo = document.querySelector(".tipo");
+
+tipo.addEventListener("change", function () {
+  if (tipoRadio[0].checked) {
+    enviar.textContent = "Codificar Mensagem!";
+  } else {
+    enviar.textContent = "Decodificar Mensagem!";
+  }
+});
+
+var entrada = document.getElementById("entrada");
+
+enviar.addEventListener("click", function (e) {
+  e.preventDefault();
+});

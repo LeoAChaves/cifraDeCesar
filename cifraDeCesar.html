@@ -22,7 +22,7 @@
 
       <fieldset>
         <legend>Método da criptografia</legend>
-        <select class="metodo">
+        <select class="metodo" required>
           <option>Escolha o método</option>
           <option>Cifra de Cesar</option>
           <option>Base 64</option>
@@ -41,19 +41,20 @@
       </div>
 
       <fieldset class="tipo">
-        <div class="cod-decod">
+        <div class="coddecod">
           <input
             type="radio"
-            name="cod-decod"
+            name="coddecod"
             value="msg-codigo"
             id="codificar"
+            checked
           />
           <label for="codificar">Codificar</label>
         </div>
         <div class="cod-decod">
           <input
             type="radio"
-            name="cod-decod"
+            name="coddecod"
             value="codigo-msg"
             id="decodificar"
           />
@@ -63,7 +64,7 @@
 
       <div class="resposta"></div>
 
-      <button class="enviar">------- Mensagem!</button>
+      <button class="enviar">Codificar Mensagem!</button>
     </form>
 
     <script src="./cifraDeCesar.js"></script>
