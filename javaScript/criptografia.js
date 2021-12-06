@@ -37,7 +37,11 @@ enviar.addEventListener("click", function (e) {
   var mensagem = entrada.value;
   if (metodo.selectedIndex == 0) {
     metodo.style.backgroundColor = "orangered";
-    metodo.style.transition = "2s";
+    setTimeout(
+      () => (metodo.style.backgroundColor = "rgba(0, 0, 255, 0.7)"),
+      1000
+    );
+    metodo.style.transition = "1s";
   } else if (metodo.selectedIndex == 1) {
     if (tipoRadio[0].checked) {
       codificarCifra(mensagem, chave);
