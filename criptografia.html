@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cifra de Cesar</title>
-    <link rel="stylesheet" href="./cifraDeCesar.css" />
+    <title>Criptógrafo</title>
+    <link rel="stylesheet" href="./criptografia.css" />
   </head>
   <body>
     <form class="decoder">
       <h2>Criptógrafo</h2>
 
       <textarea
-        name="mensagem"
         id="entrada"
         cols="55"
         rows="7"
@@ -31,6 +30,7 @@
 
       <div class="passo">
         <input
+          id="chave"
           type="range"
           value="50"
           min="1"
@@ -62,11 +62,13 @@
         </div>
       </fieldset>
 
-      <div class="resposta"></div>
+      <output class="resposta"></output>
 
       <button class="enviar">Codificar Mensagem!</button>
     </form>
 
-    <script src="./cifraDeCesar.js"></script>
+    <script src="./javaScript/criptografia.js"></script>
+    <script src="./javaScript/cifraDeCesar.js"></script>
+    <script src="./javaScript/base64.js"></script>
   </body>
 </html>
