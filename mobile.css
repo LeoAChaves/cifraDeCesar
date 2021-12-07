@@ -1,0 +1,34 @@
+@media (max-width: 550px) {
+  body {
+    height: 110vh;
+  }
+  .decoder {
+    width: 400px;
+  }
+  textarea {
+    width: 360px;
+  }
+}
+@media (max-width: 490px) {
+  body {
+    height: 122vh;
+  }
+  .decoder {
+    width: 340px;
+  }
+  textarea {
+    width: 300px;
+  }
+}
+@media (max-width: 340px) {
+  body {
+    height: 125vh;
+    font-size: 8px;
+  }
+  .decoder {
+    width: 190px;
+  }
+  textarea {
+    width: 150px;
+  }
+}
