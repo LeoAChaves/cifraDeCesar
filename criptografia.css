@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
   background-image: url("./imagens/criptografia.jpg");
@@ -11,8 +10,11 @@ body {
   background-size: cover;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  font-family: "Press Start 2P", cursive;
+  font-size: small;
 }
 fieldset {
   border: none;
@@ -39,12 +41,12 @@ legend {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 100px;
 }
 .passo {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-weight: 700;
   font-size: 24px;
   width: 50%;
 }
@@ -52,10 +54,12 @@ legend {
   display: flex;
   flex-direction: column;
 }
-.resposta {
+.saida {
   width: 80%;
   height: 100px;
   color: white;
+  word-wrap: break-word;
+  overflow-y: scroll;
 }
 .enviar {
   width: 124px;
@@ -64,12 +68,11 @@ legend {
   color: white;
   border-radius: 10px;
   font-size: 15px;
-  font-weight: 700;
 }
 
 .metodo,
 .tipo,
-.resposta,
+.saida,
 .passo {
   background-color: rgba(0, 0, 255, 0.7);
   padding: 10px 15px;
@@ -80,5 +83,24 @@ label,
 legend,
 .metodo,
 output {
+  color: white;
+}
+.enviar {
+  font-family: "Press Start 2P", cursive;
+  font-size: smaller;
+}
+output {
+  padding-top: 10px;
+}
+footer {
+  background-color: rgba(128, 128, 128, 0.9);
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+}
+footer a {
+  text-decoration: none;
   color: white;
 }

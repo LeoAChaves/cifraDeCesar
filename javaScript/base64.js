@@ -17,7 +17,8 @@ function decodificarBase64(codigo) {
         (charCode >= 97 && charCode <= 122) ||
         charCode == 61 ||
         charCode == 43 ||
-        charCode == 47
+        charCode == 47 ||
+        charCode == 32
       )
     ) {
       valido = false;
