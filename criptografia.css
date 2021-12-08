@@ -34,13 +34,13 @@ legend {
 .decoder {
   background-color: rgba(128, 128, 128, 0.9);
   width: 500px;
-  height: 550px;
+  height: 450px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .passo {
   display: flex;

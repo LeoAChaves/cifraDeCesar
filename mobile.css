@@ -20,6 +20,11 @@
     width: 300px;
   }
 }
+@media (max-width: 430px) {
+  footer {
+    display: none;
+  }
+}
 @media (max-width: 340px) {
   body {
     height: 125vh;
@@ -30,5 +35,8 @@
   }
   textarea {
     width: 150px;
+  }
+  footer {
+    display: none;
   }
 }
