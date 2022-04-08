@@ -8,7 +8,7 @@ var entrada = document.querySelector("#entrada");
 
 passo.style.display = "none";
 metodo.addEventListener("change", function () {
-  metodo.style.backgroundColor = "rgba(0, 0, 255, 0.7)";
+  metodo.style.backgroundColor = "rgba(100, 25, 160, 0.7)";
   metodo.style.transition = "none";
   if (metodo.selectedIndex == 1) {
     // "passo" aparece se Cifra for selecionado
@@ -38,7 +38,7 @@ enviar.addEventListener("click", function (e) {
   if (metodo.selectedIndex == 0) {
     metodo.style.backgroundColor = "orangered";
     setTimeout(
-      () => (metodo.style.backgroundColor = "rgba(0, 0, 255, 0.7)"),
+      () => (metodo.style.backgroundColor = "rgba(100, 25, 160, 0.7)"),
       1000
     );
     metodo.style.transition = "1s";

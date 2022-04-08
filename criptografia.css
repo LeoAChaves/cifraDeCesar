@@ -11,15 +11,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-family: "Press Start 2P", cursive;
-  font-size: small;
 }
 fieldset {
   border: none;
 }
 textarea {
   resize: none;
+  height: 100px;
   border-radius: 15px;
   padding: 10px;
 }
@@ -32,15 +32,14 @@ legend {
   margin-top: 6px;
 }
 .decoder {
-  background-color: rgba(128, 128, 128, 0.9);
-  width: 500px;
-  height: 450px;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 600px;
+  height: 550px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 30px;
 }
 .passo {
   display: flex;
@@ -58,12 +57,11 @@ legend {
   height: 100px;
   color: white;
   word-wrap: break-word;
-  overflow-y: scroll;
 }
 .enviar {
-  width: 124px;
+  width: 150px;
   height: 56px;
-  background-color: black;
+  background-color: rgba(30, 10, 170, 0.7);
   color: white;
   border-radius: 10px;
   font-size: 15px;
@@ -73,7 +71,7 @@ legend {
 .tipo,
 .saida,
 .passo {
-  background-color: rgba(0, 0, 255, 0.7);
+  background-color: rgba(100, 25, 160, 0.7);
   padding: 10px 15px;
   border-radius: 15px;
 }
@@ -89,17 +87,7 @@ output {
   font-size: smaller;
 }
 output {
+  font-family: sans-serif;
   padding-top: 10px;
-}
-footer {
-  background-color: rgba(128, 128, 128, 0.9);
-  width: 100%;
-  height: 50px;
-  text-align: center;
-  padding-top: 15px;
-  color: white;
-}
-footer a {
-  text-decoration: none;
-  color: white;
+  font-size: 20px;
 }
